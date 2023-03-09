@@ -1,0 +1,15 @@
+.bg {
+    width: 1200px;
+    height: 596px;
+    
+    background: url(../../Img/bg.jpg) no-repeat;
+    background-size: 1200px 596px;
+}
+
+.title {
+    position: absolute;
+    font-size: 100px;
+    color: #fff;
+    margin-top: 490px;
+    margin-left: 200px;
+}

@@ -1,0 +1,46 @@
+.card{
+    background-color: #B41F23;
+    color: white;
+    position: relative;
+    margin-top: 3rem;
+    padding: 1.5px;
+}
+p{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+}
+.card img{
+    width: 100%;
+    height: 75%;
+    transition: 0.5s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card .title{
+    text-align: center;
+    padding: 1rem;
+    font-size: 17px;
+}
+.card::after,
+.card::before{
+    content: '';
+    position: absolute;
+    background: #B41F23;
+    z-index: -1;
+}
+.card::before{
+    bottom: -2em;
+    left: 0;
+    width: 75%;
+    height: 3em;
+}
+.card::after{
+    bottom: -2em;
+    right: 0.9em;
+    width: 41%;
+    height: 5em;
+    transform: rotate(-38deg);
+    box-sizing: 1rem;
+}
