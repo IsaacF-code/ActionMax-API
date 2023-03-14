@@ -3,14 +3,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    margin-left: 430px;
+    margin-left: 25rem;
 }
 .search{
     outline: none;
     background: none;
     border: none;
     margin-left: 2rem;
-    width: 250px;
+    width: 48rem;
     height: 35px;
     border-radius: 1rem;
     color: #000000;
@@ -30,5 +30,5 @@
     margin: 3rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-gap:1rem
+    grid-gap: 3rem;
 }
