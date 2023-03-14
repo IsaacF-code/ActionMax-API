@@ -16,19 +16,22 @@ export default function InfoPersonagens() {
     }, [id]);
     return (
       <>
-      {
-        (!item)? "":(
-          <div className="box-content">
-            <div className="right-box">
-            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
+        <div>
+            <h1 className={styles.title}>Informações do Personagem</h1>
+        </div>
+        {
+            (!item)? "":(
+            <div className={styles.box_content}>
+                <div className={styles.right_box}>
+                    <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
+                </div>
+                <div className={styles.left_box}>
+                    <h1>{item.name}</h1>
+                    <h4>{item.description ? item.description: "Descrição não disponível"}</h4>
+                </div>
             </div>
-            <div className="left-box">
-              <h1>{item.name}</h1>
-              <h4>{item.description ? item.description: "Descrição não disponível"}</h4>
-            </div>
-          </div>
-        )
-      }
+            )
+        }
       </>
     )
   }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import Container from "./Container"
+//import Container from "./Container"
 
 import styles from './Navbar.module.css'
 import logo from '../../Img/marvelLogo.png'
@@ -10,31 +10,29 @@ import iconPerson from '../../Img/iconPersonagens.jpg'
 function Navbar(){
     return (
       <nav className={styles.navbar}>
-        <Container>
             <Link to='/'>
                 <img src={logo} alt="Marvel" className={styles.logo} />
             </Link>
             <ul className={styles.list}>
                 <li className={`${styles.item} ${styles.home}`}>
-                    <Link to='/'>
+                    <Link to='/' className={styles.link}>
                         <img src={iconHome} alt="Icon Home" className={styles.imgHome} />
-                        <span className={styles.textHome}>Home</span>
+                        <span>Home</span>
                     </Link>
                 </li>
-                <li className={`${styles.item} ${styles.person}`}>
-                    <Link to='/personagens'>
-                        <img src={iconPerson} alt="Icon Person" className={styles.imgPerson} />
-                        <span className={styles.textPerson}>Personagens</span>
+                <li className={`${styles.item} ${styles.home}`}>
+                    <Link to='/personagens' className={styles.link}>
+                        <img src={iconPerson} alt="Icon Person" className={styles.imgHome} />
+                        <span>Personagens</span>
                     </Link>
                 </li>
-                <li className={`${styles.item} ${styles.sobre}`}>
-                    <Link to='/sobre'>
+                <li className={`${styles.item} ${styles.home}`}>
+                    <Link to='/sobre' className={styles.link}>
                         
-                        <span className={styles.textSobre}>Sobre</span>
+                        <span>Sobre</span>
                     </Link>
                 </li>
             </ul>
-        </Container>
       </nav>
     )
 }

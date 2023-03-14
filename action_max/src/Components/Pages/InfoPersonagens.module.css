@@ -1,0 +1,12 @@
+.box_content img{
+    
+}
+
+.right_box img{
+    width: 50%;
+    height: 50%;
+    display: inline;
+}
+.left_box{
+    font-size: 20px;
+}

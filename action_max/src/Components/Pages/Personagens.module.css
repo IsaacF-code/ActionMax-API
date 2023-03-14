@@ -1,3 +1,30 @@
+.search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin-left: 430px;
+}
+.search{
+    outline: none;
+    background: none;
+    border: none;
+    margin-left: 2rem;
+    width: 250px;
+    height: 35px;
+    border-radius: 1rem;
+    color: #000000;
+    font-size: 20px;
+    padding: 1.2rem;
+    padding-left: 35px;
+    border:2px solid #B41F23
+}
+
+.icon {
+    position: absolute;
+    margin-left: 42px;
+}
+
 .content{
     width: 80%;
     margin: 3rem auto;
