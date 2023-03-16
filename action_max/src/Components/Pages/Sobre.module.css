@@ -1,0 +1,46 @@
+.bg {
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url(../../Img/bgSobre.gif) no-repeat;
+    background-size: 100% 100%;
+}
+
+h1, h2, p {
+    color: #FFFFFF;
+} 
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+.footer {
+    margin-top: 50px;
+}
+
+
+.footer p {
+    font-size: 1.4rem;
+
+}
+
+.socialIcon {
+    font-size: 25px;
+    color: #FFFFFF;
+    margin: auto 10px;
+}
+
+.githubIcon:hover {
+    color: #333333;
+}
+
+.linkedinIcon:hover {
+    color: #0e76a8;
+}

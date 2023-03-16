@@ -20,7 +20,7 @@ function Navbar(){
 
     return (
         <header>
-            <nav className={styles.navbar}ref={navRef} >
+            <nav className={styles.navbar} ref={navRef} >
                 <Link to='/'>
                     <img src={logo} alt="Marvel" className={styles.logo} />
                 </Link>

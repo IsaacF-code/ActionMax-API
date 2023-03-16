@@ -9,14 +9,19 @@ export default function Personagens() {
 
     const [item, setItem] = useState();
     useEffect(() => {
-        const link = "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=2e1cdeec426ae323484f29024084c206&hash=d516513ba95b9407c7aca0f73b241f8a"
+        const link = "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=66babf1d57dec46391217c896731bfd5&hash=81fb6d76491377eb3bd4baa458a8acc4"
         search(link);    
     }, [])
-
-    const searchChar = (value) => {
-        const url = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${value}&ts=1&apikey=2e1cdeec426ae323484f29024084c206&hash=d516513ba95b9407c7aca0f73b241f8a`;
-        search(url);
-    }
+    
+    //Usando 'useEffect' para ter o debounce
+    const [searchChar, setSearchChar] = useState("");
+    useEffect(() => {
+        const getChar = setTimeout(() => {
+            const url = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${searchChar}&ts=1&apikey=66babf1d57dec46391217c896731bfd5&hash=81fb6d76491377eb3bd4baa458a8acc4`;
+            search(url);
+        }, 1000);
+        return () => clearTimeout(getChar);
+    }, [searchChar])
 
     const search = (url) => {
         const fetch = async () => {
@@ -34,7 +39,7 @@ return (
             <FontAwesomeIcon icon={faSearch} className={styles.icon} />
             <input type="search" placeholder='Nome do personagem'
                 className={styles.search}
-                onChange={e => searchChar(e.target.value)}
+                onChange={e => setSearchChar(e.target.value)}
             />
         </div>
         <div className={styles.content}>
