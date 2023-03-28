@@ -7,6 +7,7 @@
 
 h1, h2, p {
     color: #FFFFFF;
+    padding: 0 20px;
 } 
 
 .header {
@@ -35,6 +36,10 @@ h1, h2, p {
     font-size: 25px;
     color: #FFFFFF;
     margin: auto 10px;
+}
+
+.footer a {
+    padding: 0 10px;
 }
 
 .githubIcon:hover {

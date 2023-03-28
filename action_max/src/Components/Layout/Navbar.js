@@ -17,6 +17,10 @@ function Navbar(){
         navRef.current.classList.toggle(styles.nav_responsive);
     }
 
+    function apagarLocal(){
+        localStorage.clear();
+
+    }
 
     return (
         <header>
@@ -26,19 +30,19 @@ function Navbar(){
                 </Link>
                 <ul className={styles.list}>
                     <li className={`${styles.item} ${styles.pags}`}>
-                        <Link to='/' className={styles.link}>
+                        <Link to='/' onClick={apagarLocal} className={styles.link}>
                             <img src={iconHome} alt="Icon Home" className={styles.imgHome} />
                             <span>Home</span>
                         </Link>
                     </li>
                     <li className={`${styles.item} ${styles.pags}`}>
-                        <Link to='/personagens' className={styles.link}>
+                        <Link to='/personagens' onClick={apagarLocal} className={styles.link}>
                             <img src={iconPerson} alt="Icon Person" className={styles.imgPerson} />
                             <span>Personagens</span>
                         </Link>
                     </li>
                     <li className={`${styles.item} ${styles.pags}`}>
-                        <Link to='/sobre' className={styles.link}>
+                        <Link to='/sobre' onClick={apagarLocal} className={styles.link}>
                             <img src={iconSobre} alt="Icon Sobre" className={styles.imgHome} />
                             <span>Sobre</span>
                         </Link>

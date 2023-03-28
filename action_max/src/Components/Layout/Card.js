@@ -3,6 +3,7 @@ import styles from './Card.module.css'
 
 export default function Card({ data }) {
     let navigate = useNavigate();
+  
     return (
         <>
         {
