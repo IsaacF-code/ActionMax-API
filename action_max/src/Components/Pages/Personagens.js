@@ -25,7 +25,7 @@ export default function Personagens() {
     //Usando 'useEffect' para ter o debounce
     useEffect(() => {
         const getChar = setTimeout(() => {
-            let url = searchChar.trim().length > 0 ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${searchChar}&ts=1&apikey=66babf1d57dec46391217c896731bfd5&hash=81fb6d76491377eb3bd4baa458a8acc4`: "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=66babf1d57dec46391217c896731bfd5&hash=81fb6d76491377eb3bd4baa458a8acc4";
+            let url = searchChar.trim().length > 0 ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${searchChar}&ts=1&apikey=66babf1d57dec46391217c896731bfd5&hash=81fb6d76491377eb3bd4baa458a8acc4`: "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=66babf1d57dec46391217c896731bfd5&hash=81fb6d76491377eb3bd4baa458a8acc4";
             search(url);
         }, 1000);
         return () => clearTimeout(getChar);
