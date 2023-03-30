@@ -19,15 +19,14 @@ function Navbar(){
 
     function apagarLocal(){
         localStorage.clear();
-
     }
 
     return (
         <header>
-            <nav className={styles.navbar} ref={navRef} >
                 <Link to='/'>
                     <img src={logo} alt="Marvel" className={styles.logo} />
                 </Link>
+            <nav className={styles.navbar} ref={navRef} >
                 <ul className={styles.list}>
                     <li className={`${styles.item} ${styles.pags}`}>
                         <Link to='/' onClick={apagarLocal} className={styles.link}>
@@ -48,11 +47,11 @@ function Navbar(){
                         </Link>
                     </li>
                 </ul>
-                <button className={`${styles.nav_btn} ${styles.nav_btn_close} ${styles.fechar}`} onClick={showBarNav}>
+                <button className={`${styles.nav_btn} ${styles.nav_btn_close}`} onClick={showBarNav}>
                     <FaTimes />
                 </button>
             </nav>
-            <button className={`${styles.nav_btn} ${styles.abrir}`} onClick={showBarNav}>
+            <button className={`${styles.nav_btn}`} onClick={showBarNav}>
                 <FaBars />
             </button>
         </header>

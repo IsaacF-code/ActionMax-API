@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+//import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
@@ -38,10 +39,18 @@ export default function Personagens() {
         }
         fetch();
     }
+
+    // const navigate = useNavigate();
+
+    // const handleSearch = (e) => {
+    //     e.preventDefault();
+    //     navigate(`/personagens/search?q=${searchChar}`)
+    // }
     
     const multipleFunctions = (e) => {
         handleChange(e);
         setSearchChar(e.target.value);
+        // handleSearch(e);
     }
     
     return (
