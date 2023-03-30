@@ -23,14 +23,6 @@ function Sobre(){
                         <FaLinkedin className={`${styles.socialIcon} ${styles.linkedinIcon}`} />
                     </a>
                     
-                    <p>Francisco Carlos</p>
-                    <a href="https://github.com/carlosbrito99" target="_blank" rel="noreferrer">
-                        <FaGithub className={`${styles.socialIcon} ${styles.githubIcon}`} />
-                    </a>
-                    <a href=" https://br.linkedin.com/in/carlos-brito-7705b91b0" target="_blank" rel="noreferrer">
-                        <FaLinkedin className={`${styles.socialIcon} ${styles.linkedinIcon}`} />
-                    </a>
-                    
                 </footer>
             </div>
         </>
