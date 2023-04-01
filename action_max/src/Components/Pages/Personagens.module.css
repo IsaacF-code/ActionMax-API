@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 0;
     width: 100%;
   
 }
@@ -18,17 +18,15 @@
     padding: 1.2rem;
     padding-left: 35px;
     border: 2px solid #B41F23;
-    margin: 0 3rem;
 }
 
 .icon {
     position: absolute;
-    margin-left: 3.8rem;
+    margin-left: 0.8rem;
 }
 
 .content{
-    width: 80%;
-    margin: 3rem auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     grid-gap: 3rem;

@@ -5,41 +5,31 @@
     background-size: 100% 100%;
 }
 
-h1, h2, p {
-    color: #FFFFFF;
-    padding: 0 20px;
-} 
-
-.header {
-    display: flex;
-    justify-content: center;
-}
 
 .main {
-    margin-top: 50px;
-    display: flex;
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: justify;
+    color: #FFFFFF;
+    padding: 0 20px;
 }
-.footer {
+
+.main h1 {
+    text-align: center;   
+}
+
+.main h3 {
     margin-top: 50px;
 }
 
-
-.footer p {
+.main p {
     font-size: 1.4rem;
-
 }
 
 .socialIcon {
     font-size: 25px;
     color: #FFFFFF;
     margin: auto 10px;
-}
-
-.footer a {
-    padding: 0 10px;
 }
 
 .githubIcon:hover {

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom"
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useRef } from "react"
- 
-//import Container from "./Container"
 
 import styles from './Navbar.module.css'
 import logo from '../../Img/marvelLogo.png'

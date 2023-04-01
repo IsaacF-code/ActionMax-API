@@ -64,7 +64,6 @@ header {
     border: none;
     outline: none;
     visibility: hidden;
-    /* display: none; */
     opacity: 0;
     font-size: 1.8rem;
 }
@@ -73,11 +72,18 @@ header {
     color: #FFFFFF;
 }
 
+.alternarButton {
+    display: none;
+}
 
 @media only screen and (max-width: 915px){
     .nav_btn {
         visibility: visible;
         opacity: 1;
+    }
+
+    .alternarButton {
+        display: block;
     }
 
     .navbar {

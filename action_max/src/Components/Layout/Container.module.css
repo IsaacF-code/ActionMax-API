@@ -2,11 +2,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    padding: 0 48px;
     flex-wrap: wrap;
 }
 
 .min-height {
-    min-height: 83.5%;
+    min-height: 85.2%;
 }
 
