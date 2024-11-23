@@ -16,7 +16,7 @@
   <img src="https://skillicons.dev/icons?i=react"/>
 </a>
 
-### Ajustes e melhorias
+### 🔧 Ajustes e melhorias
 
 O projeto está em sua forma base e que pode ser melhorada em futuras atualizações. Atualmente, precisa melhorar:
 
