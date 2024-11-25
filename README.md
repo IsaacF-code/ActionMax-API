@@ -2,7 +2,7 @@
 
 > Aplicação consumindo API da Marvel, utilizando React para projeto final da matéria de Programação Web 2
 
-### Tecnologias
+## Tecnologias
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" title="HTML" Alt="Logo do HTML">
   <img src="https://skillicons.dev/icons?i=html"/>
 </a>
@@ -16,7 +16,7 @@
   <img src="https://skillicons.dev/icons?i=react"/>
 </a>
 
-### 🔧 Ajustes e melhorias
+## 🔧 Ajustes e melhorias
 
 O projeto está em sua forma base e que pode ser melhorada em futuras atualizações. Atualmente, precisa melhorar:
 
