@@ -1,6 +1,6 @@
 # Action Max
 
-> Aplicação consumindo API da Marvel, utilizando React para projeto final da matéria de Programação Web 2
+> Aplicação consumindo API da Marvel, utilizando React para projeto final da matéria de Programação Web 2.
 
 ## Tecnologias
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" title="HTML" Alt="Logo do HTML">
